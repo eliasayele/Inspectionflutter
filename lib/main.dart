@@ -1,4 +1,5 @@
 import 'package:car_inspection/screens/auth/LoginScreen.dart';
+import 'package:car_inspection/screens/home.dart';
 import 'package:flutter/material.dart';
 
 import 'core/styles.dart';
@@ -78,6 +79,9 @@ class Starter extends StatelessWidget {
         title: 'Inspection',
         theme: buildTheme(),
         home: LoginScreen(),
+        routes: {
+          "/home": (_) => new HomePage(),
+        },
       ),
     );
   }

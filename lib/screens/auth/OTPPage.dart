@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:car_inspection/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '../home.dart';
 // import 'package:inspection/Models/User.dart';
 
 // import 'package:provider/provider.dart';
@@ -137,8 +135,9 @@ class _OTPPageState extends State<OTPPage> {
                 ),
                 onPressed: () {
                   //if (currentSeconds > timerMaxSeconds)
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                  Navigator.pushReplacementNamed(context, '/home');
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => HomePage()));
                 },
               ),
             ],
